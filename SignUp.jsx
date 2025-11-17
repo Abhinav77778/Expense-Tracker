@@ -116,6 +116,7 @@ function SignUp() {
       localStorage.setItem("user-password", cleanPassword);
       localStorage.setItem("isLoggedIn", "true");
       localStorage.setItem("loggedInEmail", cleanEmail);
+      localStorage.setItem("authToken", "loggedin");
 
       alert("✅ Sign Up successful! Redirecting to dashboard...");
       navigate("/dashboard");
